@@ -3,6 +3,7 @@ package com.usj.session1.jtrasobares
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import com.usj.session1.jtrasobares.databinding.ActivityDBinding
 
 class ActivityD : AppCompatActivity() {
@@ -20,6 +21,7 @@ class ActivityD : AppCompatActivity() {
             val intent = Intent(this, ActivityB::class.java)
             intent.putExtra("result","Hemos Vuelto!")
             startActivityForResult(intent, RESULT_OK)
+            Log.v("Hola","Hola")
         }
     }
 
