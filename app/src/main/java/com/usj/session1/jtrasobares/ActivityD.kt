@@ -21,7 +21,6 @@ class ActivityD : AppCompatActivity() {
             val intent = Intent(this, ActivityB::class.java)
             intent.putExtra("result","Hemos Vuelto!")
             startActivityForResult(intent, RESULT_OK)
-            Log.v("Hola","Hola")
         }
     }
 
